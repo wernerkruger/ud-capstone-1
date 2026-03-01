@@ -2,6 +2,8 @@
 
 This project implements a reproducible data workflow using the Titanic dataset. It loads the data, cleans it with documented functions, runs exploratory analysis, and produces three labeled visualizations. The workflow is intended as a foundation for future machine learning and AI work.
 
+Github repository: https://github.com/wernerkruger/ud-capstone-1
+
 ## What You Built
 
 - **Jupyter Notebook** (`data_workflow.ipynb`): End-to-end workflow with setup, ingestion, cleaning (two functions with docstrings), one EDA function, three visualizations (Survival by Pclass, by Sex, Age by Survival), and a written summary.
