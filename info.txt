@@ -1,0 +1,306 @@
+Overview
+In this project, you will create a complete, reproducible data workflow using the Python skills you developed in your Nanodegree. You will load a dataset, clean and transform it, explore it, visualize it, and communicate your findings in a clear and professional way.
+
+This project uses only the tools you already know:
+
+Python
+NumPy
+Pandas
+Matplotlib / Seaborn
+Git & GitHub
+Jupyter Notebooks
+You are not training machine learning models yet. This project focuses on building the workflow that later ML, Deep Learning, Generative AI, and Agentic AI projects will build on. As part of this work, you will reference one provided scholarly article on reproducible data science to support at least one workflow or design decision, and you will identify and cite at least one additional scholarly source that supports your analysis or methodological choices.
+
+Why This Project Matters
+A clean and reproducible data workflow is the first step in almost every AI or data science project. Employers expect professionals to:
+
+Write modular, reusable code
+Work with real datasets
+Clean and explore data
+Create meaningful visualizations
+Document their work clearly
+Use Git for version control
+What You Will Build
+You will create:
+
+A Jupyter Notebook with a complete data workflow following a clear structure.
+A README File explaining your project, how to run it, and how it connects to future AI work.
+A written summary with academic citations and a References section using the template provided.
+A GitHub Repository with multiple commits and at least one additional branch to demonstrate professional version control.
+
+Local Machine Instructions
+Before you begin the project, make sure your environment is set up correctly. This will help you avoid errors and ensure your notebook runs smoothly from start to finish.
+
+Install Python 3.x
+You can use any recent version of Python 3 (3.9 or higher).
+If you have already completed the Nanodegree projects, you should already have this installed.
+Install Jupyter Notebook or JupyterLab You may use any of the following:
+Jupyter Notebook
+JupyterLab
+VS Code with the Jupyter Extension
+Anaconda (includes Jupyter by default) To install Jupyter via pip:
+   pip install notebook
+To start Jupyter Notebook:
+
+   jupyter notebook
+Install Required Python Libraries Make sure the following libraries are installed:
+NumPy
+Pandas
+Matplotlib
+Seaborn Install them with:
+   pip install numpy pandas matplotlib seaborn
+If you are using Anaconda, these will already be available.
+
+Install and Set Up Git Make sure Git is installed and connected to your GitHub account. Check your Git version:
+git --version
+If Git is not installed, download it here: https://git-scm.com/downloads(opens in a new tab) You should be able to:
+
+Clone your project repository
+Create branches
+Commit and push your work to GitHub
+Validate Your Environment Open a new Jupyter Notebook and run this code:
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+If the imports work with no errors, your environment is ready. Next, test that you can load your dataset:
+
+df = pd.read_csv("your_dataset.csv")
+df.head()
+If you see the first few rows of your dataset, everything is set up correctly.
+
+Create Your requirements.txt File Before submitting your project, generate a reproducibility file:
+pip freeze > requirements.txt
+This file lists all the packages in your environment so someone else can run your notebook exactly as you did.
+
+Project Instructions
+Follow the tasks below in order. Each task builds on the previous one. Complete each task before moving to the next.
+
+What You Will Submit:
+data_workflow.ipynb
+module_summary.pdf
+requirements.txt
+README.md
+A GitHub repository link showing multiple commits and at least one additional branch
+Task 1 — Choose Your Dataset
+Begin by selecting the dataset you will work with in this project. You may choose from the recommended options below, or use your own dataset as long as it meets the project requirements.
+
+Recommended Datasets
+Titanic - Machine Learning from Disaster(opens in a new tab)
+This data is located under the DATA folder
+
+
+If you choose your own dataset, it must:
+Contain at least 200 rows
+Have at least 5 columns
+Be a CSV or other tabular file
+Be safe and appropriate for academic use
+After selecting your dataset, download it and place it in the same folder as your notebook.
+
+Task 2 — Create Your GitHub Repository
+Create a new GitHub repository named: ai-programming-foundations-project
+Clone it to your local machine.
+Create at least one additional branch for development work.
+Make regular commits as you complete each task.
+Your repository should now contain at least two branches.
+
+Task 3 — Set Up Your Notebook
+Create a new Jupyter Notebook named data_workflow.ipynb.
+In the first Markdown cell, include:
+Your name
+The dataset you selected
+A short 2–3 sentence description of the project
+Your notebook should now have a clear and complete introduction.
+
+Task 4 — Import Libraries and Load Your Dataset
+Add code cells that import the required libraries:
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+Then load your dataset:
+
+df = pd.read_csv("your_dataset.csv")
+df.head()
+If the first rows display correctly, your data is loaded.
+
+Task 5 — Build Your Data Cleaning Functions
+Write at least two cleaning functions. Each function must include a docstring explaining what it does.
+
+Apply your functions to your dataset.
+
+Task 6 — Write an Exploratory Analysis Function
+Create one or more exploratory analysis (EDA) functions such as:
+
+Summary statistics
+Grouped or filtered views
+Correlation checks
+Run your EDA function and review the output.
+
+Task 7 — Create Three Visualizations
+Create at least three visualizations using Matplotlib or Seaborn. Each visualization must include:
+
+A title
+Labeled axes
+Task 8 — Write Your Summary and Interpretation
+Add a Markdown section that describes, in complete sentences:
+
+What you learned from the dataset
+Interesting patterns or insights
+Limitations or assumptions
+Anything surprising or unclear
+Task 9 — Create Your README File (Short Run Instructions Only)
+Create a file named README.md in your GitHub repo. Your README must include:
+Project Description (2–4 sentences)
+What you built
+What dataset you used (name + link)
+How to Run the Project
+How to install dependencies
+How to open and run data_workflow.ipynb
+Create requirements.txt
+Include the command:
+pip install -r requirements.txt
+
+pip freeze > requirements.txt
+Important: Do not put long explanations or citations in the README. All detailed explanations and academic citations belong in module_summary.pdf. A reviewer should be able to follow your README and run your notebook successfully.
+
+Task 10 — Summary & Interpretation (with Academic Citations)
+Each capstone module requires a written summary supported by academic citations. For this module, you must submit a separate written report.
+
+Create a file named module_summary.pdf. As part of this report, you must read and cite the required peer-reviewed article: Reproducible Data Science with Python: An Open Learning Resource(opens in a new tab) on reproducible data science.
+
+You must use this article to support at least one workflow, reproducibility, or design decision you made in this project. In addition, you must find and cite at least one other peer-reviewed scholarly source that supports a relevant best-practice claim in your report. Both sources must appear as in-text citations and in the References section of module_summary.pdf.
+
+Your report must include the following sections:
+
+Overview (2–4 sentences)
+Explain what you built and what dataset you used. Include the dataset name and link.
+
+Dataset Description (3–6 sentences)
+Describe what the dataset represents, its size (rows/columns), and the key variables you focused on.
+
+Workflow Description (high level)
+Explain your workflow steps at a high level:
+
+Ingestion
+Cleaning
+Exploratory analysis
+Visualizations
+Summary
+Key Decisions and Assumptions
+Explain the most important choices you made and why they were appropriate for your dataset:
+
+Cleaning choices
+What you focused on in EDA
+What each plot was designed to show
+Tip: When you make a best-practice claim (for example, about missing data, reproducibility, bias, or visualization choices), support it with a citation.
+
+Results and Interpretation
+Summarize the most important patterns you found. Refer to your notebook outputs and visualizations (for example: Figure 1, Figure 2, Figure 3).
+
+Responsible Practice (Bias and Data Quality)
+Explain where cleaning or data handling could introduce bias or misleading results in your dataset, and what you did (or would do next) to reduce that risk.
+
+Reproducibility
+Explain how someone else could rerun your work. Mention requirements.txt and your Git workflow (commits/branching).
+
+Sources and Citations (Required)
+Include a references list. Use citations in the report whenever you make a general claim about best practices.
+
+Acceptable sources include:
+Official documentation (Python, Pandas, Matplotlib, Git)
+University or textbook resources
+Peer-reviewed articles or conference papers
+Submission Instructions
+Make sure your submission includes:
+
+GitHub Repository
+Multiple commits showing progress
+At least one additional branch
+All project files included
+Notebook
+Dataset loads correctly
+Two cleaning functions with docstrings
+One EDA function
+Three labeled visualizations
+Summary section
+No execution errors
+README
+Project description
+Reproducibility instructions
+How to run data_workflow.ipynb
+How to install dependencies (pip install -r requirements.txt)
+requirements.txt
+Created using:
+
+pip freeze > requirements.txt
+Written summary report with in-text citations
+References section (consistent citation style)
+At least 2 credible sources (at least 1 scholarly source)
+Report content grounded in your dataset, code, and visualizations
+If everything on the checklist is complete, your project is ready to submit.
+
+Rubric
+Use this project rubric to understand and assess the project criteria.
+
+Untitled Section
+Criteria	Submission Requirements
+Notebook Execution
+
+Notebook runs top-to-bottom without errors; all cells execute successfully.
+
+Data Ingestion
+
+Dataset loads correctly using Pandas; first rows are displayed.
+
+Data Cleaning Functions
+
+At least two cleaning functions defined and used; each includes a clear docstring.
+
+Exploratory Analysis Function
+
+At least one EDA function defined and used (summary statistics, grouping, filtering, etc.).
+
+Visualizations
+
+At least three visualizations using Matplotlib/Seaborn; each has a title and labeled axes.
+
+Reproducibility
+
+A correct requirements.txt file created using pip freeze is included.
+
+Cleaning Justification
+
+Student clearly explains why cleaning steps were necessary and what issues they addressed.
+
+Visualization Interpretation
+
+Each visualization includes a brief, accurate interpretation of what the plot shows.
+
+Summary & Interpretation
+
+Final summary describes insights, patterns, assumptions, and limitations in complete sentences.
+
+Bias Awareness
+
+README includes a thoughtful response explaining where poor data cleaning could introduce bias.
+
+Notebook includes required sections (Setup, Ingestion, Cleaning, EDA, Visualizations, Summary) with clear markdown headings.
+
+All student-defined functions include informative docstrings; code formatting is readable.
+
+README includes a project description, reproducibility instructions, and complete responses to all reflection questions.
+
+Git/GitHub Usage
+
+Repository includes multiple commits and at least one additional branch beyond main.
+
+Future Integration Reflections
+
+README includes complete answers on ML workflow changes, neural network preparation, and agentic automation potential.
+
+Workflow Completeness
+
+Submission resembles a professional, reusable data workflow appropriate as a foundation for ML/DL projects.
+
